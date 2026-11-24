@@ -252,7 +252,8 @@ dd { margin: 0; padding-left: 0; color: #3d3d3d; }
 .byline .m { color: var(--muted); font-size: 12px; }
 
 figure.shot {
-  margin: 16px 0 18px;
+  margin: 16px auto 18px;
+  max-width: 600px;
   border: 1px solid var(--line);
   background: #fff;
   padding: 8px;
