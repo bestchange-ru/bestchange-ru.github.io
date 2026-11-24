@@ -220,6 +220,64 @@ dl { margin: 0 0 16px; }
 dt { margin: 14px 0 2px; }
 dd { margin: 0; padding-left: 0; color: #3d3d3d; }
 
+/* автор, иллюстрации, журнал проверок */
+.byline {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  background: #fbfcf7;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin: 12px 0 16px;
+}
+
+.byline .avatar {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e6f0cf;
+  border: 1px solid #b7d17a;
+  color: var(--olive);
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.byline p { margin: 0; }
+.byline .n { font-weight: 700; font-size: 14px; }
+.byline .m { color: var(--muted); font-size: 12px; }
+
+figure.shot {
+  margin: 16px 0 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+figure.shot img { display: block; width: 100%; height: auto; border: 1px solid #ececec; }
+figure.shot figcaption { font-size: 12.5px; color: var(--muted); padding: 7px 2px 0; line-height: 1.5; }
+
+table.log td:first-child { white-space: nowrap; }
+.ok { color: #2f7a12; font-weight: 700; }
+.bad { color: #a3470f; font-weight: 700; }
+
+.disclosure {
+  border: 1px dashed var(--warn-line);
+  background: var(--warn-bg);
+  padding: 10px 12px;
+  font-size: 12.5px;
+  color: #5b4620;
+  border-radius: 4px;
+  margin: 14px 0;
+}
+
+.faq-note { font-size: 12.5px; color: var(--muted); margin-top: -2px; }
+
 /* FAQ */
 details {
   border: 1px solid var(--line);
